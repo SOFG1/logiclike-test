@@ -6,7 +6,7 @@ export const axiosInstance: AxiosInstance = axios.create({
   baseURL: primaryApiUrl,
 });
 
-export const handle = (promise: Promise<AxiosResponse<any>>) => {
+export const handle = (promise: Promise<AxiosResponse>) => {
   return promise
     .then((data) => [data.data, undefined])
     .catch((error) => Promise.resolve([undefined, error]));
