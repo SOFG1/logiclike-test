@@ -35,7 +35,7 @@ export const MainPage = React.memo(() => {
   const selectedCourses = useMemo(() => {
     if (selectedTag) return courses.filter((c) => c.tags.includes(selectedTag));
     return courses;
-  }, [selectedTag]);
+  }, [selectedTag, courses]);
 
   const handleFetchCourses = async () => {
     const [res, err] = await handle(coursesApi.getCourses());
@@ -46,6 +46,7 @@ export const MainPage = React.memo(() => {
   useEffect(() => {
     handleFetchCourses();
   }, []);
+
 
   return (
     <StyledPage>

@@ -13,6 +13,7 @@ const StyledTags = styled.div`
 
 const StyledTag = styled.button<{ selected: boolean }>`
   display: block;
+  text-align: left;
   width: 100%;
   font-size: 18px;
   line-height: 1;
