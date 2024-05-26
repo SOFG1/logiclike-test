@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledTags = styled.div`
-  padding: 12px;
+  padding: 12px 11px;
   border: 1px solid #cfcfe4;
   border-radius: 18px;
   width: fit-content;
