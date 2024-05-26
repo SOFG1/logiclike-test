@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledTags = styled.div`
   padding: 12px;
   border: 1px solid #cfcfe4;
-  border-radius: 18px;
+  border-radius: 18px; 
   width: fit-content;
   position: sticky;
   top: 24px;
