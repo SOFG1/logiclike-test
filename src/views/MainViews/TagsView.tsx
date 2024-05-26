@@ -9,7 +9,7 @@ const StyledTags = styled.div`
   position: sticky;
   top: 24px;
   left: 24px;
-`; 
+`;  
 
 const StyledTag = styled.button<{ selected: boolean }>`
   display: block;
