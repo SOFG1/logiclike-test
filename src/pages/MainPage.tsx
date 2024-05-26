@@ -47,7 +47,6 @@ export const MainPage = React.memo(() => {
     handleFetchCourses();
   }, []);
 
-
   return (
     <StyledPage>
       <TagsView
