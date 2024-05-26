@@ -1,5 +1,13 @@
 # React + TypeScript + Vite
 
+yarn dev - Start development server locally
+
+yarn build - Build production build
+
+yarn lint - for linting
+
+yarn deploy - deploy app to gh-pages
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
