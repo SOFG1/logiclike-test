@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { handle } from "../api";
 import { coursesApi } from "../api/courses";
 import { ICourse } from "../types";
@@ -20,7 +20,7 @@ const StyledCoursesList = styled.div`
   gap: 18px;
 `;
 
-export const MainPage = React.memo(() => {
+export function MainPage() {
   const [courses, setCourses] = useState<ICourse[]>([]);
   const [selectedTag, setSelectedTag] = useState<string | null>(null); //If null selected "all items"
 
@@ -61,4 +61,4 @@ export const MainPage = React.memo(() => {
       </StyledCoursesList>
     </StyledPage>
   );
-});
+}
