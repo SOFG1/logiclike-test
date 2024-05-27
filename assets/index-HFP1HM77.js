@@ -97,3 +97,4 @@ Error generating stack: `+i.message+`
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 `;function H1(){const[e,t]=tt.useState([]),[n,r]=tt.useState(null),o=tt.useMemo(()=>{const u=[];return e.forEach(s=>{u.push(...s.tags)}),[...new Set(u)]},[e]),i=tt.useMemo(()=>n?e.filter(u=>u.tags.includes(n)):e,[n,e]),l=async()=>{const[u,s]=await Oy(Ly.getCourses());u&&t(u),s&&console.log(s)};return tt.useEffect(()=>{l()},[]),Pe.jsxs(U1,{children:[Pe.jsx(F1,{tags:o,selectedTag:n,onSelectTag:r}),Pe.jsx(B1,{children:i.map(u=>Pe.jsx(M1,{course:u},u.id))})]})}function V1(){return Pe.jsx(H1,{})}Cl.createRoot(document.getElementById("root")).render(Pe.jsx(An.StrictMode,{children:Pe.jsx(V1,{})}));
+//# sourceMappingURL=index-HFP1HM77.js.map
