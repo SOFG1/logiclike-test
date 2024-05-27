@@ -4,7 +4,7 @@ import { coursesApi } from "../api/courses";
 import { ICourse } from "../types";
 import styled from "styled-components";
 import { TagsView } from "../views/MainViews/TagsView";
-import CourseCardComponent from "../components/MainComponents/CourseCardComponent";
+import { CourseCardComponent } from "../components/MainComponents/CourseCardComponent";
 
 const StyledPage = styled.div`
   padding: 24px;

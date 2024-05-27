@@ -31,7 +31,8 @@ interface IProps {
   course: ICourse;
 }
 
-const CourseCardComponent = React.memo(({ course }: IProps) => {
+
+export const CourseCardComponent = React.memo(({ course }: IProps) => {
   return (
     <StyledCard>
       <StyledImg
@@ -44,4 +45,3 @@ const CourseCardComponent = React.memo(({ course }: IProps) => {
   );
 });
 
-export default CourseCardComponent;
