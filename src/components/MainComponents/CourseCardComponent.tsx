@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { ICourse } from "../../types";
 
@@ -32,7 +31,7 @@ interface IProps {
 }
 
 
-export const CourseCardComponent = React.memo(({ course }: IProps) => {
+export function CourseCardComponent({ course }: IProps) {
   return (
     <StyledCard>
       <StyledImg
@@ -43,5 +42,5 @@ export const CourseCardComponent = React.memo(({ course }: IProps) => {
       <StyledName>{course.name}</StyledName>
     </StyledCard>
   );
-});
+}
 

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const StyledTags = styled.div`
@@ -35,30 +34,28 @@ interface IProps {
   onSelectTag: (t: string | null) => void;
 }
 
-export const TagsView = React.memo(
-  ({ tags, selectedTag, onSelectTag }: IProps) => {
-    return (
-      <StyledTags>
+export function TagsView({ tags, selectedTag, onSelectTag }: IProps) {
+  return (
+    <StyledTags>
+      <StyledTag
+        selected={selectedTag === null}
+        onClick={() => {
+          if (selectedTag !== null) onSelectTag(null);
+        }}
+      >
+        Все темы
+      </StyledTag>
+      {tags.map((t) => (
         <StyledTag
-          selected={selectedTag === null}
+          selected={selectedTag === t}
           onClick={() => {
-            if (selectedTag !== null) onSelectTag(null);
+            if (selectedTag !== t) onSelectTag(t);
           }}
+          key={t}
         >
-          Все темы
+          {t}
         </StyledTag>
-        {tags.map((t) => (
-          <StyledTag
-            selected={selectedTag === t}
-            onClick={() => {
-              if (selectedTag !== t) onSelectTag(t);
-            }}
-            key={t}
-          >
-            {t}
-          </StyledTag>
-        ))}
-      </StyledTags>
-    );
-  }
-);
+      ))}
+    </StyledTags>
+  );
+}
