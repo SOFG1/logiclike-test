@@ -44,7 +44,7 @@ export function MainPage() {
   };
 
   useEffect(() => {
-    handleFetchCourses();
+    handleFetchCourses(); 
   }, []);
 
   return (
