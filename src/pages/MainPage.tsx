@@ -47,7 +47,7 @@ export function MainPage() {
     handleFetchCourses(); 
   }, []);  
 
-  return (
+  return ( 
     <StyledPage> 
       <TagsView 
         tags={tags}  
