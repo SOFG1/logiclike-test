@@ -51,7 +51,7 @@ export function MainPage() {
     <StyledPage>
       <TagsView
         tags={tags} 
-        selectedTag={selectedTag}
+        selectedTag={selectedTag} 
         onSelectTag={setSelectedTag} 
       />  
       <StyledCoursesList>
