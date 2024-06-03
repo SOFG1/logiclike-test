@@ -45,7 +45,7 @@ export function MainPage() {
 
   useEffect(() => {
     handleFetchCourses(); 
-  }, []);
+  }, []); 
 
   return (
     <StyledPage>
