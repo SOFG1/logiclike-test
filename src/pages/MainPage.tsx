@@ -49,7 +49,7 @@ export function MainPage() {
 
   return (
     <StyledPage>
-      <TagsView
+      <TagsView 
         tags={tags} 
         selectedTag={selectedTag} 
         onSelectTag={setSelectedTag} 
