@@ -52,7 +52,7 @@ export function MainPage() {
       <TagsView
         tags={tags} 
         selectedTag={selectedTag}
-        onSelectTag={setSelectedTag}
+        onSelectTag={setSelectedTag} 
       />  
       <StyledCoursesList>
         {selectedCourses.map((c) => (
