@@ -58,7 +58,7 @@ export function MainPage() {
         {selectedCourses.map((c) => (
           <CourseCardComponent course={c} key={c.id} />
         ))}
-      </StyledCoursesList>
+      </StyledCoursesList> 
     </StyledPage> 
   );
 }
