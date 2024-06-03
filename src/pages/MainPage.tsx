@@ -59,7 +59,7 @@ export function MainPage() {
           <CourseCardComponent course={c} key={c.id} />
         ))}
       </StyledCoursesList>
-    </StyledPage>
+    </StyledPage> 
   );
 }
  
