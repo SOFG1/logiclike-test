@@ -61,4 +61,4 @@ export function MainPage() {
       </StyledCoursesList>
     </StyledPage>
   );
-}
+} 
