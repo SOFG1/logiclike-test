@@ -44,22 +44,21 @@ export function MainPage() {
   };
 
   useEffect(() => {
-    handleFetchCourses(); 
-  }, []);  
+    handleFetchCourses();
+  }, []);
 
-  return ( 
-    <StyledPage> 
-      <TagsView   
-        tags={tags}  
-        selectedTag={selectedTag}  
-        onSelectTag={setSelectedTag}    
-      />   
-      <StyledCoursesList>    
+  return (
+    <StyledPage>
+      <TagsView
+        tags={tags}
+        selectedTag={selectedTag}
+        onSelectTag={setSelectedTag}
+      />
+      <StyledCoursesList>
         {selectedCourses.map((c) => (
           <CourseCardComponent course={c} key={c.id} />
         ))}
-      </StyledCoursesList> 
-    </StyledPage> 
+      </StyledCoursesList>
+    </StyledPage>
   );
 }
-  
