@@ -53,7 +53,7 @@ export function MainPage() {
         tags={tags}  
         selectedTag={selectedTag}
         onSelectTag={setSelectedTag}
-      /> 
+      />  
       <StyledCoursesList>
         {selectedCourses.map((c) => (
           <CourseCardComponent course={c} key={c.id} />
