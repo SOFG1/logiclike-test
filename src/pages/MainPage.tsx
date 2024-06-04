@@ -54,7 +54,7 @@ export function MainPage() {
         selectedTag={selectedTag}  
         onSelectTag={setSelectedTag}    
       />  
-      <StyledCoursesList>  
+      <StyledCoursesList>   
         {selectedCourses.map((c) => (
           <CourseCardComponent course={c} key={c.id} />
         ))}
