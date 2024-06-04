@@ -48,7 +48,7 @@ export function MainPage() {
   }, []);
 
   return (
-    <StyledPage>
+    <StyledPage> 
       <TagsView
         tags={tags}
         selectedTag={selectedTag}
