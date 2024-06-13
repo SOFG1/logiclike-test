@@ -1,6 +1,6 @@
 import { MainPage } from "./pages/MainPage";
  
-function App() {
+function App() { 
   return <MainPage />;  
 } 
 
